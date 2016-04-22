@@ -1,5 +1,7 @@
 # Stunning Octo Invention
 
+[![Build Status](https://travis-ci.org/dtisgodsson/stunning-octo-invention.svg?branch=master)](https://travis-ci.org/dtisgodsson/stunning-octo-invention)
+
 ## Technology Used
 
 ### Vagrant
