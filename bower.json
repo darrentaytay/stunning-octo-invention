@@ -1,0 +1,26 @@
+{
+  "name": "Stunning Octo Invention",
+  "description": "Submission for the Sky Betting & Gaming Technical Test.",
+  "main": "",
+  "authors": [
+    "Darren Taylor"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sky",
+    "test"
+  ],
+  "homepage": "https://github.com/dtisgodsson/stunning-octo-invention",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6",
+    "jquery": "^2.2.3"
+  }
+}
