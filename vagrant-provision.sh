@@ -42,3 +42,14 @@ php -r "if (hash_file('SHA384', 'composer-setup.php') === '7228c001f88bee9750674
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
+
+# Get Node JS
+## Install PPA
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
+
+# Install Gulp globally
+sudo npm install --global gulp-cli
+
+# Install Bower globally
+sudo npm install --global bower
