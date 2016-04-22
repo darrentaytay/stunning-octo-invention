@@ -1,5 +1,6 @@
 <?php
 
+use App\Exceptions\RoutingException;
 use DI\ContainerBuilder;
 
 # Include Composers Autoload
@@ -11,6 +12,12 @@ $container        = $containerBuilder->build();
 
 # Instantiate the Router class and resolve the request
 $router = $container->get('App\Core\Router');
-$resolved = $router->resolve($_SERVER['REQUEST_URI']);
 
-dd($resolved);
+try {
+	$router->resolve($_SERVER['REQUEST_URI']);
+}
+catch(RoutingException $exception) {
+	header('HTTP/1.0 404 Not Found');
+	echo '404: Page not found.';
+	exit();
+}
