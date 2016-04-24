@@ -20,6 +20,10 @@ var config = {
             source: 'assets/coffeescript/**/*.coffee',
             dest: 'public/js'
         },
+        lib: {
+            source: 'assets/lib/**/*',
+            dest: 'public/lib'
+        }
     },
  
     liveReloadPort: 35729
@@ -36,6 +40,11 @@ gulp.task('sass:compile', function() {
         })
         .pipe(gulp.dest(config.paths.sass.dest))
         .pipe(livereload(server));
+});
+
+gulp.task('lib:copy', function(){
+    gulp.src(config.paths.lib.source)
+        .pipe(gulp.dest(config.paths.lib.dest));
 });
 
 gulp.task('coffeescript:compile', function () {
