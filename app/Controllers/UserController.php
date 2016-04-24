@@ -1,15 +1,17 @@
 <?php namespace App\Controllers;
 
 use App\Repositories\UserRepository;
+use App\Template\Templater;
 
 /**
  * UserController Class
  */
 class UserController {
 
-	public function __construct(UserRepository $userRepository)
+	public function __construct(UserRepository $userRepository, Templater $templater)
 	{
 		$this->userRepository = $userRepository;
+		$this->templater      = $templater;
 	}
 
 	/**
@@ -20,7 +22,7 @@ class UserController {
 	{
 		$users = $this->userRepository->all();
 
-		return view('users/index', compact('users'));
+		return $this->templater->render('users/index', ['users' => $users]);
 	}
 
 }

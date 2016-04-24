@@ -11,7 +11,17 @@ $containerBuilder = new ContainerBuilder;
 $containerBuilder->addDefinitions([
     \App\Repositories\UserRepository::class => function(){
         return new \App\Repositories\JSON\JSONUserRepository(new \App\Repositories\JSON\JSONUserTransformer);
-    }
+    },
+
+   Twig_Environment::class => function () {
+        $loader = new Twig_Loader_Filesystem(__DIR__ . '/../app/Views');
+        return new Twig_Environment($loader);
+    },
+
+    \App\Template\Templater::class => function(Twig_Environment $twig){
+        return new \App\Template\TwigTemplater($twig);
+    },
+
 ]);
 $container        = $containerBuilder->build();
 
