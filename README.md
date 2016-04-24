@@ -16,11 +16,12 @@ This will launch a Virtual Machine, running Ubuntu and containing the following:
 
 ### Composer
 
-PHP package manager to provide access to some third party libraries such as:
+PHP package manager to provide access to the following third party libraries:
 
 * PHP DI for dependency injection
 * phpUnit for unit testing
 * Mockery for mocking objects
+* Twig as a templating engine
 
 ### Gulp
 
