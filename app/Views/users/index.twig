@@ -1,0 +1,11 @@
+{% extends 'template.twig' %}
+
+{% block content %}
+
+        {% for user in users %}
+
+            {{ user.getFirstName() }}
+
+        {% endfor %}
+
+{% endblock %}
