@@ -53,3 +53,6 @@ sudo npm install --global gulp-cli
 
 # Install Bower globally
 sudo npm install --global bower
+
+# Install Bower Installer globally
+sudo npm install --global bower-installer
