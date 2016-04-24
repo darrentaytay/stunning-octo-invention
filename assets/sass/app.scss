@@ -5,11 +5,21 @@
 *****************************/
 
 $primary: #0D2D6A;
+$secondary: #FFFFFF;
 
 /****************************
 ** General
 *****************************/
 
 body {
-	background: $primary;
+	background: $secondary;
+}
+
+h1 { 
+	color: $primary;
+	font-size: 3.3rem;
+}
+
+input[type=text] {
+	margin-bottom: 0;
 }
