@@ -59,7 +59,7 @@ phpUnit is used for Unit Testing in this project.
 
 Mockery is used in conjunction with phpUnit to create Mock objects to focus on testing one class in isolation.
 
-## Travis CI
+### Travis CI
 
 Travis CI was used as a Continious Integration platform, alerting me if any commits broke my build and providing confidence when dealing with merge requests.
 
