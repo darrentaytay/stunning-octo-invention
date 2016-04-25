@@ -29,7 +29,11 @@
   "install": {
     "base": "assets/lib",
     "sources": {
-      "Materialize": "bower_components/Materialize/fonts/**"
+      "Materialize": [
+        "bower_components/Materialize/dist/js/**",
+        "bower_components/Materialize/dist/css/**",
+        "bower_components/Materialize/dist/fonts/**"
+      ]
     },
     "path": {
       "js": "{name}/js",
