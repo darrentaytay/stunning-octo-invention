@@ -2,6 +2,32 @@
 
 [![Build Status](https://travis-ci.org/dtisgodsson/stunning-octo-invention.svg?branch=master)](https://travis-ci.org/dtisgodsson/stunning-octo-invention)
 
+## Installation Guide
+
+This project ships with a `Vagrantfile` which, in conjunction with Vagrant & VirtualBox, allows Developers to launch a configured VirtualMachine.
+
+With Vagrant & VirtualBox downloaded and installed, navigate to the root of the project and run;
+
+`vagrant up`
+
+This might take some time, but when it's done, all dependencies should be installed and the project should be ready to run. Simply navigate to the following URL to see the project:
+
+`http://192.168.33.19`
+
+## Running Tests
+
+To run the unit tests, SSH into the vagrant box via the root of the project:
+
+`vagrant ssh`
+
+Then navigate to the vagrant folder once inside the Virtual Machine:
+
+`cd /vagrant`
+
+Then run:
+
+`vendor/bin/phpunit`
+
 ## Technology Used
 
 ### Vagrant
@@ -24,6 +50,18 @@ PHP package manager to provide access to the following third party libraries:
 * phpUnit for unit testing
 * Mockery for mocking objects
 * Twig as a templating engine
+
+### phpUnit
+
+phpUnit is used for Unit Testing in this project.
+
+#### Mockery
+
+Mockery is used in conjunction with phpUnit to create Mock objects to focus on testing one class in isolation.
+
+## Travis CI
+
+Travis CI was used as a Continious Integration platform, alerting me if any commits broke my build and providing confidence when dealing with merge requests.
 
 ### Gulp
 
