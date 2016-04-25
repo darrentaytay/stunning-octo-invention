@@ -1,8 +1,8 @@
 # Stunning Octo Invention
 
-![Screenshot of project](/screenshot.png?raw=true "What it should look like!")
-
 [![Build Status](https://travis-ci.org/dtisgodsson/stunning-octo-invention.svg?branch=master)](https://travis-ci.org/dtisgodsson/stunning-octo-invention)
+
+![Screenshot of project](/screenshot.png?raw=true "What it should look like!")
 
 ## Installation Guide
 
