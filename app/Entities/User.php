@@ -11,13 +11,13 @@ class User {
 	 * Users First Name
 	 * @var string
 	 */
-	private $firstName;
+	public $firstName;
 
 	/**
 	 * Users Last Name
 	 * @var string
 	 */
-	private $lastName;
+	public $lastName;
 
 	/**
 	 * Set Users First Name

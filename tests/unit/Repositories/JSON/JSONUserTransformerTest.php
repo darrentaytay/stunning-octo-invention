@@ -26,12 +26,12 @@ class JSONUserTransformerTest extends PHPUnit_Framework_TestCase
     {
         return [
             (object)[
-                'first_name' => 'Test Darren',
-                'last_name' => 'Test Taylor'
+                'firstName' => 'Test Darren',
+                'lastName' => 'Test Taylor'
             ],
             (object)[
-                'first_name' => 'Test Taylor',
-                'last_name' => 'Test Taylor'
+                'firstName' => 'Test Taylor',
+                'lastName' => 'Test Taylor'
             ],
         ];
     }

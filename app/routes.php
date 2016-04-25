@@ -2,6 +2,7 @@
 
 return [
 
-	'/' => 'UserController:index'
+    '/'          => 'UserController:index',
+    '/user/save' => 'UserController:save',
 
 ];

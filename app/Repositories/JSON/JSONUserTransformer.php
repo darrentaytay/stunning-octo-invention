@@ -16,8 +16,8 @@ class JSONUserTransformer {
 		foreach($collection as $item)
 		{
 			$user = new User;
-			$user->setFirstName($item->first_name);
-			$user->setLastName($item->last_name);
+			$user->setFirstName($item->firstName);
+			$user->setLastName($item->lastName);
 
 			$entities[] = $user;
 		}
