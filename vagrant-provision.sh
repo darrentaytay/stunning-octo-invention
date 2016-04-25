@@ -43,8 +43,6 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 
-composer install --require-dev
-
 # Get Node JS
 ## Install PPA
 curl -sL https://deb.nodesource.com/setup | sudo bash -
@@ -60,6 +58,8 @@ sudo npm install --global bower
 sudo npm install --global bower-installer
 
 cd /vagrant
+
+composer install
 
 npm install
 bower install
