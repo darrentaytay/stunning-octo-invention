@@ -75,4 +75,4 @@ gulp.task('watch', function () {
     gulp.watch(config.paths.sass.source, ['sass:compile']);
 });
 
-gulp.task('default', ['coffeescript:compile', 'sass:compile']);
+gulp.task('default', ['coffeescript:compile', 'sass:compile', 'lib:copy']);

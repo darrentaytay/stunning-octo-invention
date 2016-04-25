@@ -56,3 +56,10 @@ sudo npm install --global bower
 
 # Install Bower Installer globally
 sudo npm install --global bower-installer
+
+cd /vagrant
+
+npm install
+bower install
+bower-installer
+gulp
