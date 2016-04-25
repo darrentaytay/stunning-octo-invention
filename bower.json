@@ -40,8 +40,5 @@
       "woff": "{name}/fonts",
       "woff2": "{name}/fonts"
     }
-  },
-  "devDependencies": {
-    "angular": "1.5.5"
   }
 }
