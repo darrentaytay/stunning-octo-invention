@@ -8,7 +8,11 @@ skyApp.controller 'UserListCtrl', ($scope, $location, userService)->
       $scope.users.push { firstName: '', lastName: '' }
 
     $scope.saveUsers = ()->
-      userService.saveUsers $scope.users
+      userService.saveUsers($scope.users).then((response)->
+        notie.alert 1, 'Your Users were saved successfully', 3
+      , (response)->
+        notie.alert 3, 'There was a problem saving your Users', 3
+      )
 
 skyApp.config ['$routeProvider',
   ($routeProvider)->

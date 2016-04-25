@@ -41,4 +41,6 @@ Task runner providing the following functionality:
 Front-end package manager, provides:
 
 * jQuery
-* Materialize 
+* Materialize
+* Angular JS & Angular Route
+* Notie

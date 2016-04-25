@@ -43,6 +43,7 @@ class UserController {
         }
         catch(ValidationException $exception)
         {
+            header('HTTP/1.0 403 Forbidden');
             return json_encode(['error' => sprintf('Validation Exception: %s', $exception->getMessage())]);
         }
 
