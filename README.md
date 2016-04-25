@@ -4,7 +4,7 @@
 
 ## Installation Guide
 
-This project ships with a `Vagrantfile` which, in conjunction with Vagrant & VirtualBox, allows Developers to launch a configured VirtualMachine.
+This project ships with a `Vagrantfile`, which, in conjunction with Vagrant & VirtualBox, allows Developers to launch a configured VirtualMachine.
 
 With Vagrant & VirtualBox downloaded and installed, navigate to the root of the project and run;
 
@@ -82,3 +82,7 @@ Front-end package manager, provides:
 * Materialize
 * Angular JS & Angular Route
 * Notie
+
+#### Bower Installer
+
+Extract only the required files from `bower_components` - leaving fluff like tests, documentation etc. behind.
